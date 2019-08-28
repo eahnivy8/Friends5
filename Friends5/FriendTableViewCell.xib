@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendCell" id="GiF-xS-lvH" customClass="FriendTableViewCell" customModule="Friends5" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GiF-xS-lvH" id="sQd-H9-Vxf">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="VOz-vt-OcC">
+                        <rect key="frame" x="12" y="8" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="FVx-5I-4sT"/>
+                            <constraint firstAttribute="width" secondItem="VOz-vt-OcC" secondAttribute="height" multiplier="1:1" id="tz0-kG-MTJ"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhF-31-7eE">
+                        <rect key="frame" x="346" y="38" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="PhF-31-7eE" secondAttribute="height" multiplier="1:1" id="fDu-q8-la8"/>
+                            <constraint firstAttribute="width" constant="40" id="m8i-uS-6U4"/>
+                        </constraints>
+                        <state key="normal" image="button_unstar"/>
+                        <state key="selected" image="button_star"/>
+                        <connections>
+                            <action selector="touchUpStarButton:" destination="GiF-xS-lvH" eventType="touchUpInside" id="PsJ-q2-c7U"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uM2-gy-Mgn">
+                        <rect key="frame" x="120" y="34.5" width="218" height="46.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vv-en-nfh">
+                                <rect key="frame" x="0.0" y="0.0" width="43.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AgO-Dj-FL0">
+                                <rect key="frame" x="0.0" y="28.5" width="78.5" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtQ-ON-NDW">
+                                        <rect key="frame" x="0.0" y="0.0" width="37.5" height="18"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <color key="textColor" red="0.1341411686" green="0.25775710060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1D-tg-1Tz">
+                                        <rect key="frame" x="45.5" y="0.0" width="33" height="18"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VOz-vt-OcC" firstAttribute="top" secondItem="sQd-H9-Vxf" secondAttribute="top" constant="8" id="Kmj-Jg-6fd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PhF-31-7eE" secondAttribute="trailing" constant="8" id="S8O-eH-YZK"/>
+                    <constraint firstItem="PhF-31-7eE" firstAttribute="centerY" secondItem="uM2-gy-Mgn" secondAttribute="centerY" id="Xai-w7-TM1"/>
+                    <constraint firstItem="uM2-gy-Mgn" firstAttribute="centerY" secondItem="sQd-H9-Vxf" secondAttribute="centerY" id="avF-7j-vkX"/>
+                    <constraint firstAttribute="bottom" secondItem="VOz-vt-OcC" secondAttribute="bottom" constant="8" id="l5u-9e-fdi"/>
+                    <constraint firstItem="VOz-vt-OcC" firstAttribute="centerY" secondItem="sQd-H9-Vxf" secondAttribute="centerY" id="nK7-5o-QXg"/>
+                    <constraint firstItem="PhF-31-7eE" firstAttribute="leading" secondItem="uM2-gy-Mgn" secondAttribute="trailing" constant="8" id="nZo-Lf-CWq"/>
+                    <constraint firstItem="VOz-vt-OcC" firstAttribute="leadingMargin" secondItem="sQd-H9-Vxf" secondAttribute="leadingMargin" id="nhX-HS-ccd"/>
+                    <constraint firstItem="uM2-gy-Mgn" firstAttribute="leading" secondItem="VOz-vt-OcC" secondAttribute="trailing" constant="8" id="s8A-dW-zeg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellLabel" destination="b1D-tg-1Tz" id="3tg-8a-3iN"/>
+                <outlet property="nameLabel" destination="7vv-en-nfh" id="eSv-Hr-JM2"/>
+                <outlet property="nationalityLabel" destination="UtQ-ON-NDW" id="yJ6-kG-4i7"/>
+                <outlet property="profileImageView" destination="VOz-vt-OcC" id="gSq-jI-SC3"/>
+                <outlet property="starButton" destination="PhF-31-7eE" id="Th1-87-0Zi"/>
+            </connections>
+            <point key="canvasLocation" x="-55.072463768115945" y="33.482142857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="button_star" width="25" height="25"/>
+        <image name="button_unstar" width="25" height="25"/>
+        <image name="placeholder" width="100" height="100"/>
+    </resources>
+</document>
